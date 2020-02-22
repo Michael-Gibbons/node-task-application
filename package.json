@@ -1,0 +1,20 @@
+{
+  "name": "node-task-application",
+  "version": "1.0.0",
+  "description": "This is a task application built in node, this readme will be updated once more progress has been made.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael-Gibbons/node-task-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael-Gibbons/node-task-application/issues"
+  },
+  "homepage": "https://github.com/Michael-Gibbons/node-task-application#readme"
+}
