@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js -e js,hbs",
     "test": "env-cmd -f ./config/test.env jest --detectOpenHandles --runInBand",
-    "dev-test": "env-cmd -f ./config/test.env nodemon src/index.js"
+    "dev-test": "env-cmd -f ./config/test.env nodemon src/index.js -e js,hbs",
+    "db": "C:/Users/micha/mongodb/bin/mongod.exe --dbpath=C:/Users/micha/mongodb-data"
   },
   "jest": {
     "testEnvironment": "node"
@@ -27,10 +28,12 @@
     "@sendgrid/mail": "^6.5.3",
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "hbs": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.3",
     "mongoose": "^5.9.2",
     "multer": "^1.4.2",
+    "path": "^0.12.7",
     "sharp": "^0.24.1",
     "validator": "^12.2.0"
   },
